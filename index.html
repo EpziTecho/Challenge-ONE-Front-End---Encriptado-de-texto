@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Encriptar/Desencriptar</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/Logo.png" alt="Logo de Alura Latam" />
+        </header>
+        <main class="contenedor">
+            <section class="area__principal">
+                <div class="area__centro">
+                    <textarea
+                        class="area__centro__textarea"
+                        placeholder="Ingrese el texto aqui "></textarea>
+
+                    <div class="area__centro__inferior__advertencia">
+                        <img src="img/Advertencia.png" alt="" />
+                        <label>Solo letras minúsculas y sin tildes.</label>
+                    </div>
+                    <div class="area__centro__inferior__botones">
+                        <button
+                            class="area__centro__inferior__botones__encriptar">
+                            Encriptar
+                        </button>
+                        <button
+                            class="area__centro__inferior__botones__desencriptar">
+                            Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="area_mensaje">
+                <textarea
+                    class="area__mensaje_textarea"
+                    name=""
+                    id="result"></textarea>
+                <div class="area__mensaje__contenido">
+                    <img id="imagen" src="img/imagen.png" alt="Ilustración" />
+                    <p class="result-mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="result-mensaje-descripcion">
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                </div>
+                <button class="mensaje__boton">Copiar</button>
+            </section>
+        </main>
+        <footer>Desarollado Por Sergio 2024</footer>
+        <script src="encriptador.js"></script>
+    </body>
+</html>
